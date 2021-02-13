@@ -1,0 +1,25 @@
+<div class="container bg_img">
+    <div class="row box-cadastro">
+        <div class="col-12">
+            <h3 class="text-center texto-cadastro">Cadastro de clientes</h3>
+                <form class="mt-5"  [formGroup]='formCadastro' (ngSubmit)='objetoCadastro()' (ngSubmit)="resetForm()">
+            <div class="form-group">
+            <input type="date" class="form-control cadastro" id="exampleInputdate1" aria-describedby="dateHelp" placeholder="Data" formControlName='data'>
+            </div>
+            <div class="form-group">
+                <input type="time" class="form-control cadastro" id="exampleInputPassword1" placeholder="Horário" formControlName='horario'>
+            </div>
+            <div class="form-group">
+                <input type="verbatim" class="form-control cadastro" id="exampleInputPassword1" placeholder="Texto Alfanumérico"  formControlName='alfanumerico'>
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control cadastro" id="exampleInputPassword1" placeholder="Digite somente números"  formControlName='numero'>
+            </div>
+            <div class="form-group">
+                <textarea type="number" class="form-control cadastro" id="exampleInputPassword1" placeholder="Área de Texto Livre"  formControlName='texto'></textarea>
+            </div>
+    <button type="submit" class="btn btn-cadastro btn-lg" (click)="objetoCadastro()" (click)="resetForm()">Cadastrar</button>
+    </form>
+        </div>
+    </div>
+</div>
